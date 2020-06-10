@@ -49,7 +49,7 @@ public class Hacker : MonoBehaviour
     }
 
     void RunMainMenu(string input)
-    {
+    {     
         bool isValidLevelNumber = (input == "1" || input == "2" || input == "3");
         if(isValidLevelNumber)
         {
@@ -69,11 +69,11 @@ public class Hacker : MonoBehaviour
         currentScreen = Screen.MainMenu;
         Terminal.ClearScreen();
         Terminal.WriteLine(stringToUse);
-        Terminal.WriteLine("What would you like to access");
+        Terminal.WriteLine("What would you like to hack into");
         Terminal.WriteLine("");
-        Terminal.WriteLine("Press 1 for Giaccomo's nudes");
-        Terminal.WriteLine("Press 2 for finding Freddy");
-        Terminal.WriteLine("Press 3 for Brad's age");
+        Terminal.WriteLine("Press 1 for local library");
+        Terminal.WriteLine("Press 2 for police station");
+        Terminal.WriteLine("Press 3 for nasa");
         Terminal.WriteLine("");
         Terminal.WriteLine("Enter your selection :");
     }
@@ -137,33 +137,31 @@ public class Hacker : MonoBehaviour
         switch(level)
         {
             case 1:
-                Terminal.WriteLine("Mama mia");
+                Terminal.WriteLine("found book of secrets");
                 Terminal.WriteLine(@"
-  .`         `.
-.'             `.
-:        |       :
-'.      .'.     .'
-  \`'''`\ /`'''`/
-   \     |     /");
+    _______
+   /      /,
+  /      //
+ /______//
+(______(/
+");
                 break;
             case 2:
-                Terminal.WriteLine("Found him");
+                Terminal.WriteLine("you found prison key");
                 Terminal.WriteLine(@"
-       >\\\|/<
-        |_""""_|
-        (O)(o)
-+----OOO--(_)--OOOo----+
+ ____
+, =, ( _________
+| ='  (VvvVvV--'
+|____(
 ");
                 break;
             case 3:
-                Terminal.WriteLine("System crashed....");
+                Terminal.WriteLine("connection successfull");
                 Terminal.WriteLine(@"
-  _____
- /     \
-| () () |
- \  ^  /
-  |||||
-  |||||   
+ _ __   __ _ ___  __ _ 
+| '_ \ / _` / __|/ _` |
+| | | | (_| \__ \ (_| |
+|_| |_|\__,_|___/\__,_|   
 ");
                 break;
 
